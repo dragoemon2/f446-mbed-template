@@ -17,7 +17,7 @@ c_cpp_properties.jsonを無理やり書き換えるプログラムを書いて�
         {
             "label": "edit c_cpp_properties.json",
             "type": "shell",
-            "command": "python3", //ここを書き換える必要があるかもしれない
+            "command": "python3",
             "args": [
                 "${workspaceFolder}/edit_c_cpp_properties.py"
             ],
