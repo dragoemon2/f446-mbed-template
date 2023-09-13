@@ -34,8 +34,3 @@ https://github.com/KeioRoboticsAssociation/F446_Mbed_Template
     ]
 }
 ```
-
-3. includeパスに波線がでたら右クリックして，「クイックフィックス/"includepath"に追加」を何回かやる
-
-これで解決します！（多分）
-
