@@ -22,7 +22,7 @@ class SerialCommunication{
 
         int printf(const char* format, ...);
 
-        
+        void printBytes(unsigned char* array);
 
         //前の改行から現時点で受信した文字列
         char str[64];

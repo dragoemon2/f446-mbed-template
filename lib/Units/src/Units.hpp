@@ -1,3 +1,5 @@
+#pragma once
+
 #include <chrono>
 
 inline std::chrono::microseconds operator ""_hz(unsigned long long value) {

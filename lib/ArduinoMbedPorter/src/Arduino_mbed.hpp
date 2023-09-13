@@ -1,6 +1,7 @@
 #pragma once
 
 #include "TimerTicker.hpp"
+#include "SerialCommunication.hpp"
 
 
 #include <mbed.h>
@@ -77,5 +78,19 @@ namespace ArduinoMbedConverter
 
     uint8_t analog_reference_mode;
 };
+
+#if 0
+
+class HardwareSerial
+{
+    public:
+        HardwareSerial();
+        SerialCommunication* serial;
+        int printf(const char);
+        void begin(int baud); 
+
+};
+
+#endif
 
 

@@ -1,16 +1,13 @@
-#include <mbed.h>
-#include "PWMGenerator.hpp"
-#include "Units.hpp"
+#include "BNO055.hpp"
 
-
-PWMGenerator pwm(D8, 20ms, 0.3f, false);
-
+BNO055 gyro(D8, D2);
+Ticker ticker;
 
 int main(){
-    pwm.write(0.3f);
+    printf("start\n");
+
     while(true){
-        wait_us(1000000);
-        printf("%d\n", pwm._s1);
+        wait_us(1000);
+        printf("%d %d\n", int(gyro.getYawDegrees()), int(gyro.getMagDegrees()));
     }
 }
-

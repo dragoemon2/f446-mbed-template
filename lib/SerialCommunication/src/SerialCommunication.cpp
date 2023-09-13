@@ -33,6 +33,10 @@ int SerialCommunication::printf(const char* format, ...) {
     return l;
 }
 
+void SerialCommunication::printBytes(unsigned char* array) {
+    serialPort.write(array, sizeof(array));
+}
+
 void SerialCommunication::readChar() {
     char copied_str[64];
     char c;
